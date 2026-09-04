@@ -1,0 +1,12 @@
+# Editor / OS
+*~
+*.swp
+.DS_Store
+*.tmp
+
+# Secrets (never commit)
+.env
+.env.*
+*.pem
+*.key
+credentials.json
