@@ -1,8 +1,36 @@
-# RV1126B Linux 设备驱动学习课程
+# RV1126B Linux 学习课程
 
-以 Rockchip RV1126B SDK（正点原子 `atk_dlrv1126b_linux6.1_sdk` / 飞凌 `OK1126B-linux-source`）为案例的设备驱动教程。
+以 Rockchip RV1126B SDK（正点原子 `atk_dlrv1126b_linux6.1_sdk` / 飞凌 `OK1126B-linux-source`）为案例。
 
-## 课程目录
+本仓库包含两条线：
+
+1. **BSP 入门**（先搞清 SDK / 启动 / 编译 / 烧录 / Rootfs）→ [`bsp/`](./bsp/)
+2. **设备驱动**（Platform / DTS / GPIO / 字符设备 / 中断 / I2C·SPI / MPP）→ 下方第 0–7 课
+
+建议顺序：先完成 [BSP 课](./bsp/README.md)，再进入驱动第 0 课。
+
+---
+
+## A. BSP 入门（飞凌 OK1126B 对话课）
+
+详见 **[bsp/README.md](./bsp/README.md)**。
+
+| 课次 | 文件 | 主题 |
+|------|------|------|
+| 第 0 课 | [bsp/00-BSP与SDK目录地图.md](./bsp/00-BSP与SDK目录地图.md) | BSP、SDK 树、软链接 |
+| 第 1 课 | [bsp/01-启动链rkbin与U-Boot.md](./bsp/01-启动链rkbin与U-Boot.md) | Loader / FlashData·FlashBoot |
+| 第 2 课 | [bsp/02-板级配置三件套.md](./bsp/02-板级配置三件套.md) | defconfig / parameter / DTS |
+| 第 3 课 | [bsp/03-编译与产物.md](./bsp/03-编译与产物.md) | make、firmware、`.config` |
+| 第 4 课 | [bsp/04-设备树改GPIO.md](./bsp/04-设备树改GPIO.md) | gpio 三元组、practice 沙盒 |
+| 第 5 课 | [bsp/05-烧录与串口日志.md](./bsp/05-烧录与串口日志.md) | rkflash、串口 115200 |
+| 第 6 课 | [bsp/06-Rootfs与Buildroot.md](./bsp/06-Rootfs与Buildroot.md) | overlay、加程序 |
+| 答疑 | [bsp/对话答疑与易错点.md](./bsp/对话答疑与易错点.md) | 课堂踩坑汇总 |
+
+教材路径示例：`.../FL/OK1126B-linux-source`。
+
+---
+
+## B. 设备驱动课程
 
 | 课次 | 文件 | 主题 | 难度 |
 |------|------|------|------|
@@ -26,14 +54,14 @@
 | MPP | `drivers/video/rockchip/mpp/` | 同左 |
 | 厂商文档 | `docs/cn/Common/`（GPIO、I2C、MPP…） | SDK 自带 docs |
 
-两套 SDK 内核均为 Linux 6.1 + Rockchip 补丁，本课程中的驱动路径与 API 通用。
+两套 SDK 内核均为 Linux 6.1 + Rockchip 补丁，驱动路径与 API 通用。
 
 ## 学习建议
 
-1. 按课次顺序阅读，每课末尾有检查题与练习。
-2. 能上板时优先做 sysfs / `/dev` 观察实验。
-3. 读源码时先找「五件套」：匹配表 → `platform_driver` → `probe` → `remove` → `module_platform_driver`。
-4. 第 7 课前建议至少完成第 0–4 课。
+1. 先 BSP、后驱动；每课末尾有检查题与练习。
+2. 能上板时优先做烧录 / 串口 / sysfs / `/dev` 观察。
+3. 读驱动源码时先找「五件套」：匹配表 → `platform_driver` → `probe` → `remove` → `module_platform_driver`。
+4. MPP 精读（驱动第 7 课）前建议至少完成驱动第 0–4 课与 BSP 第 0–4 课。
 
 ## 许可证说明
 
