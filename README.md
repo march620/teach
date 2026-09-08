@@ -28,6 +28,7 @@
 | 第 7 课 | [bsp/07-平台栈总览.md](./bsp/07-平台栈总览.md) | Rockit / MPP / RGA / RKAIQ / NPU |
 | 7.1–7.5 | [bsp/07.1](./bsp/07.1-Rockit-MPI.md) … [07.5](./bsp/07.5-NPU.md) | 分站精读 |
 | 答疑 | [bsp/对话答疑与易错点.md](./bsp/对话答疑与易错点.md)、[bsp/07-平台栈答疑](./bsp/07-平台栈答疑与易错点.md) | 课堂踩坑 |
+| 速查 | [bsp/嵌入式Linux常用命令速查.md](./bsp/嵌入式Linux常用命令速查.md) | 命令按用途/频率 |
 
 教材路径示例：`.../FL/OK1126B-linux-source`。
 
