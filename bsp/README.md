@@ -21,6 +21,7 @@
 | 第 4 课 | [04-设备树改GPIO.md](./04-设备树改GPIO.md) | gpio 写法、practice 沙盒 |
 | 第 5 课 | [05-烧录与串口日志.md](./05-烧录与串口日志.md) | rkflash、115200、验证 model |
 | 第 6 课 | [06-Rootfs与Buildroot.md](./06-Rootfs与Buildroot.md) | overlay、加程序、刷 rootfs |
+| 6.1 | [06.1-交叉编译与file命令.md](./06.1-交叉编译与file命令.md) | 交叉 gcc、`file`、装进 overlay |
 | 第 7 课 | [07-平台栈总览.md](./07-平台栈总览.md) | external 媒体/NPU 地图 |
 | 7.1 | [07.1-Rockit-MPI.md](./07.1-Rockit-MPI.md) | Rockit MPI、Bind、VI |
 | 7.2 | [07.2-MPP编解码.md](./07.2-MPP编解码.md) | MPP Frame/Packet |

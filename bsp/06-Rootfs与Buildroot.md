@@ -111,7 +111,11 @@ practice_hello.sh
 2. Overlay `.../default/usr/bin/xxx` 对应板上哪条路径？
 3. `make kernel` 会不会带上 `practice_hello.sh`？为什么？
 
+## 加餐
+
+交叉编译 C 程序再放进 overlay：[06.1 交叉编译与 file 命令](./06.1-交叉编译与file命令.md)
+
 ## 学完之后
 
 - 继续本仓库驱动课：[第 0 课 驱动入门](../00-驱动入门与最简形态.md)
-- 或按兴趣深入 NPU / 相机 / 网络（`external/`、`docs/rv1126b/`）
+- 或第 7 课平台栈：[07-平台栈总览](./07-平台栈总览.md)

@@ -24,6 +24,7 @@
 | 第 4 课 | [bsp/04-设备树改GPIO.md](./bsp/04-设备树改GPIO.md) | gpio 三元组、practice 沙盒 |
 | 第 5 课 | [bsp/05-烧录与串口日志.md](./bsp/05-烧录与串口日志.md) | rkflash、串口 115200 |
 | 第 6 课 | [bsp/06-Rootfs与Buildroot.md](./bsp/06-Rootfs与Buildroot.md) | overlay、加程序 |
+| 6.1 | [bsp/06.1-交叉编译与file命令.md](./bsp/06.1-交叉编译与file命令.md) | 交叉编译、`file` |
 | 第 7 课 | [bsp/07-平台栈总览.md](./bsp/07-平台栈总览.md) | Rockit / MPP / RGA / RKAIQ / NPU |
 | 7.1–7.5 | [bsp/07.1](./bsp/07.1-Rockit-MPI.md) … [07.5](./bsp/07.5-NPU.md) | 分站精读 |
 | 答疑 | [bsp/对话答疑与易错点.md](./bsp/对话答疑与易错点.md)、[bsp/07-平台栈答疑](./bsp/07-平台栈答疑与易错点.md) | 课堂踩坑 |
