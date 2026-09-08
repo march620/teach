@@ -9,6 +9,10 @@
 
 建议顺序：先完成 [BSP 课](./bsp/README.md)（含第 7 课平台栈），再进入驱动第 0 课。
 
+通用参考（不绑定具体板级工程）：
+
+- [嵌入式 Linux 常用命令速查](./embedded-linux-commands.md)
+
 ---
 
 ## A. BSP 入门（飞凌 OK1126B 对话课）
@@ -28,7 +32,6 @@
 | 第 7 课 | [bsp/07-平台栈总览.md](./bsp/07-平台栈总览.md) | Rockit / MPP / RGA / RKAIQ / NPU |
 | 7.1–7.5 | [bsp/07.1](./bsp/07.1-Rockit-MPI.md) … [07.5](./bsp/07.5-NPU.md) | 分站精读 |
 | 答疑 | [bsp/对话答疑与易错点.md](./bsp/对话答疑与易错点.md)、[bsp/07-平台栈答疑](./bsp/07-平台栈答疑与易错点.md) | 课堂踩坑 |
-| 速查 | [bsp/嵌入式Linux常用命令速查.md](./bsp/嵌入式Linux常用命令速查.md) | 命令按用途/频率 |
 
 教材路径示例：`.../FL/OK1126B-linux-source`。
 
